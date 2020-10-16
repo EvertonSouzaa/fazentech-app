@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FazenTECH</title>
+
+  <link rel="stylesheet" href="./public/normalize.css">
+  <link rel="stylesheet" href="./public/reset.css">
+  <link rel="stylesheet" href="./public/grid.css">
+  <link rel="stylesheet" href="./public/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="grid-4">
+        <img src="img/logo.png" alt="logo-imagem">
+      </a>
+      <nav class="grid-12 header-menu">
+        <ul>
+          <li><a class="menu_ativo" href="#">Cadastrar Animal</a></li>
+          <li><a href="#">Monitoramento dos Animais</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="cadastrar">
+    <div class="container">
+      <h1>Ordenha de Animais</h1>
+      <div>
+        <form class="formulario-animal grid-16" action="">
+          <p>Dados do Animal</p>
+
+          <ul>
+            <li>ID do Animal</li>
+            <input type="text" required maxlength="5" size="5">
+          </ul>
+          <ul>
+            <li>Leite Produzido/ quantidade por L </li>
+            <input type="number" required>
+          </ul>
+          <ul>
+            <li>Idade</li>
+            <input type="text" required maxlength="2" size="2">
+          </ul>
+          <ul>
+            <li>Peso / kg</li>
+            <input type="Number" required>
+          </ul>
+
+          <button class="btn">Cadastrar</button>
+        </form>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
