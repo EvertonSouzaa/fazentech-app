@@ -1,9 +1,9 @@
 body {
-  background: #8e6d6e;
+  background: #508164;
 }
 
 .header {
-  background: #508164;
+  background: #8fbc8f;
 }
 .header img {
   margin: 10px auto;
@@ -69,7 +69,7 @@ body {
   font-weight: bold;
 }
 .cadastrar input {
-  width: 70px;
+  width: 90px;
   border: 2px solid black;
 }
 
@@ -78,7 +78,10 @@ body {
 }
 
 .btn {
-  margin: 10px auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
   display: block;
   padding: 10px;
   color: #d1d8ae;
@@ -89,4 +92,133 @@ body {
   background-color: #508164;
   color: white;
   transition: 112ms;
+}
+
+.monitoramento h2 {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  color: #d1d8ae;
+}
+
+.monitoramento h2::after {
+  content: " ";
+  display: block;
+  border: 3px solid #d1d8ae;
+  width: 60px;
+  height: 3px;
+  margin: 20px auto;
+}
+
+.monitoramento label {
+  font-weight: bold;
+  display: inline-block;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.monitoramento p {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.monitoramento input {
+  width: 90px;
+  border: 2px solid black;
+}
+
+.monitoramento input:hover {
+  border: 2px solid green;
+}
+
+.formulario-animal textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 1px solid green;
+  background: white;
+  padding: 7px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 14px;
+  font-family: "Nunito" sans-serif;
+}
+
+.formulario-animal input {
+  display: block;
+  width: 100%;
+  border: 1px solid green;
+  background: white;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+.formulario-animal label {
+  display: block;
+  font-family: "Nunito" sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+
+.footer {
+  width: 100%;
+  background: #8fbc8f;
+  color: #508164;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #508164;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #508164;
+  margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+  padding-right: 40px;
+}
+
+.footer_contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Nunito" sans-serif;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_redes ul li a {
+  border: 3px solid #508164;
+  display: block;
+  padding: 3px;
+}
+
+.footer_redes ul li a:hover {
+  border-color: green;
+}
+
+.copy {
+  width: 100%;
+  background: #508164;
+  padding: 20px 0;
+  color: #d1d8ae;
 }

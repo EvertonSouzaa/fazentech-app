@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./public/normalize.css">
   <link rel="stylesheet" href="./public/reset.css">
   <link rel="stylesheet" href="./public/grid.css">
+  <link rel="stylesheet" href="./public/animate.css">
   <link rel="stylesheet" href="./public/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -19,21 +20,21 @@
       <a href="index.html" class="grid-4">
         <img src="img/logo.png" alt="logo-imagem">
       </a>
-      <nav class="grid-12 header-menu">
+      <nav class="grid-12 header-menu animate-up">
         <ul>
-          <li><a class="menu_ativo" href="#">Cadastrar Animal</a></li>
-          <li><a href="#">Monitoramento dos Animais</a></li>
+          <li><a class="menu_ativo" href="#1">Cadastrar Animal</a></li>
+          <li><a href="#2">Monitoramento dos Animais</a></li>
 
         </ul>
       </nav>
     </div>
   </header>
-  <section class="cadastrar">
+  <section class="cadastrar animate-up">
     <div class="container">
       <h1>Ordenha de Animais</h1>
       <div>
-        <form class="formulario-animal grid-16" action="">
-          <p>Dados do Animal</p>
+        <form class="formulario-animal grid-8 animate-right" action="">
+          <p id="1">Dados do Animal</p>
 
           <ul>
             <li>ID do Animal</li>
@@ -53,13 +54,92 @@
           </ul>
 
           <button class="btn">Cadastrar</button>
-        </form>
-      </div>
 
-    </div>
+        </form>
+        <div>
+
+          <div>
+            <form class="formulario-animal grid-8 animate-right" action="">
+              <p>Dados do Operário</p>
+
+              <ul>
+                <li>Nome</li>
+                <input type="text" required maxlength="10" size="10">
+              </ul>
+              <ul>
+                <li>Matrícula </li>
+                <input type="number" required>
+              </ul>
+              <ul>
+                <li>Horário de Retirado do leite</li>
+                <input type="time" required maxlength="5" size="5">
+              </ul>
+              <ul>
+                <button class="btn">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
 
   </section>
 
+
+  <section class="monitoramento animate-up">
+    <div class="container">
+      <h2 id="2">Monitoramento de Animais Doentes</h2>
+      <div>
+        <form class="formulario-animal  animate-right" action="">
+          <p>Dados do Animal</p>
+          <label for="text">ID Animal</label>
+          <input type="number" id="nome" name="nome" required>
+          <label for="mensagem">Tipo de tratamento utilizado</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <label for="mensagem">Tempo de tratamento</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <button class="btn">Cadastrar</button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+
+        <div class="grid-8 footer_historia">
+          <h3>Nossa História</h3>
+          <p>Estes modelos tecnológicos mais recentes englobam principalmente um manejo integrado de pragas e redução do uso indiscriminado de defensivos químicos. </p>
+        </div>
+
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <ul>
+            <li>- 21 23232-4343</li>
+            <li>- contato@bikcraft.com</li>
+            <li>- Petrópolis - RJ</li>
+          </ul>
+        </div>
+
+        <div class="grid-4 footer_redes">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="http://facebook.com" target="_blank"><img src="img/facebook-logo-2019.png" alt="Facebook FazenTECH"></a></li>
+            <li><a href="http://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram FazenTECH"></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="Linkedin FazenTECH"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">FazenTECH 2020 - Alguns direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
