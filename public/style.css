@@ -41,11 +41,11 @@ body {
 }
 
 .cadastrar h1::after {
-  content: " ";
+  content: "";
   display: block;
-  border: 3px solid #d1d8ae;
   width: 60px;
-  height: 3px;
+  height: 5px;
+  background: #d1d8ae;
   margin: 20px auto;
 }
 
@@ -104,11 +104,11 @@ body {
 }
 
 .monitoramento h2::after {
-  content: " ";
+  content: "";
   display: block;
-  border: 3px solid #d1d8ae;
   width: 60px;
-  height: 3px;
+  height: 5px;
+  background: #d1d8ae;
   margin: 20px auto;
 }
 
